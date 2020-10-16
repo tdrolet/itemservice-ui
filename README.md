@@ -1,3 +1,17 @@
+
+# **itemservice\-ui**
+
+A simple React front end to itemservice (see [tdrolet/itemservice](https://github.com/tdrolet/itemservice))
+
+
+---
+
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
