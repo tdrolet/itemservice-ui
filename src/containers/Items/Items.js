@@ -8,6 +8,7 @@ class Items extends Component {
     state = {
         items: [],
         selectedItemId: null,
+        isLoaded: false,
         error: false
     }
 
@@ -17,9 +18,10 @@ class Items extends Component {
                 const items = response.data;
                 this.setState({items: items});
                 console.log( response );
+                this.setState({isLoaded: true});
             } )
             .catch(error => {
-                // console.log(error);
+                console.log(error);
                 this.setState({error: true});
             });
     }
@@ -29,8 +31,8 @@ class Items extends Component {
     }
 
     render () {
-        let items = <p style={{textAlign: 'center'}}>Something went wrong!</p>;
-        if (!this.state.error) {
+        let items = <p style={{textAlign: 'center'}}>Loading....may take several seconds in GCP needs to spin up instance...</p>;
+        if (!this.state.error && this.state.isLoaded) {
             items = this.state.items.map(item => {
                 return <Item 
                     key={item.id} 
@@ -42,6 +44,7 @@ class Items extends Component {
         }
 
         let itemDetail = null;
+
         if (!this.state.selectedItemId) {
             itemDetail = 
                 <section>
