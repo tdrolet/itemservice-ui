@@ -1,7 +1,12 @@
 
 # **itemservice\-ui**
 
+[![tdrolet](https://circleci.com/gh/tdrolet/itemservice-ui.svg?style=svg)](https://app.circleci.com/pipelines/github/tdrolet/itemservice-ui)
+
+
 A simple React front end to itemservice (see [tdrolet/itemservice](https://github.com/tdrolet/itemservice))
+
+(very preliminary verion....just scaffolding for now)
 
 
 ---
