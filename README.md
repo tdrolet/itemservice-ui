@@ -6,7 +6,9 @@
 
 A simple React front end to itemservice (see [tdrolet/itemservice](https://github.com/tdrolet/itemservice))
 
-(very preliminary verion....just scaffolding for now)
+(very preliminary verion....just scaffolding for now)(http://itemserviceapp.tdrolet.com/)
+
+Sample version deployed to [Google Cloud](http://itemserviceapp.tdrolet.com/)
 
 
 ---
